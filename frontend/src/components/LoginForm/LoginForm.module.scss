@@ -1,0 +1,41 @@
+.formWrapper {
+	width: 400px;
+	height: 300px;
+	box-shadow: 0px 0px 24px -6px rgba(34, 60, 80, 0.2);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.title {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+.form {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+
+	&.error {
+		&::after {
+			position: absolute;
+			bottom: -38px;
+			font-size: 12px;
+			color: rgb(255, 76, 76);
+			text-align: center;
+			content: 'Неправильный логин или пароль';
+		}
+	}
+}
+
+.error {
+	&::after {
+		content: 'Неправильный логин или пароль';
+	}
+}

@@ -1,0 +1,16 @@
+.Header {
+	height: 60px;
+	background-color: var(--mainColor);
+	display: flex;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: 700;
+}
